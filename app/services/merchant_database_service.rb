@@ -11,4 +11,8 @@ class MerchantDatabaseService
   def all_merchants
     get_url("api/v1/merchants")
   end
+
+  def specific_merchant_id(merchant_id)
+    get_url("api/v1/merchants/#{merchant_id}/items")
+  end
 end
