@@ -3,7 +3,9 @@ require  "rails_helper"
 RSpec.describe Merchant do
   it "exists" do
     attrs = {
-      name: "Honey's Hobble"
+      attributes: {
+        name: "Honey's Hobble"
+      }
     }
 
     merchant = Merchant.new(attrs)

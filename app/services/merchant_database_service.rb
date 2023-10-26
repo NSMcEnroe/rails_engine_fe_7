@@ -1,6 +1,6 @@
 class MerchantDatabaseService
   def conn
-    Faraday.new(url: "http://localhost:3000/api/v1")
+    Faraday.new(url: "http://localhost:3000")
   end
 
   def get_url(url)
@@ -9,6 +9,6 @@ class MerchantDatabaseService
   end
 
   def all_merchants
-    get_url("/merchants")
+    get_url("api/v1/merchants")
   end
 end

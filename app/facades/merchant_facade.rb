@@ -5,7 +5,7 @@ class MerchantFacade
   def merchants 
     data = MerchantDatabaseService.new.all_merchants
 
-    data[:attributes].map do |merchant_data|
+    data[:data].map do |merchant_data|
       Merchant.new(merchant_data)
     end
   end
